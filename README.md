@@ -6,6 +6,8 @@ You paste something real, a PRD section, a roadmap justification, a piece of sta
 
 A verdict alone isn't the point. After each check, you explain why you think the result is right or wrong. An adaptive judge checks whether your answer actually names the real issue, and if it's shallow, asks one follow-up before accepting it. Progress (the "Ladder") only fills in when a check passed *and* you demonstrated real reasoning, never from watching content alone.
 
+Live product: https://prodio-ten.vercel.app/ 
+
 ## Why this exists
 
 Most people using AI for real work at their job have no reliable way to know, in advance, whether their AI-assisted output will hold up when someone actually checks it. Prodio is a judgment check, not a lesson: it tests whether you can tell good AI-assisted work from bad, using your own real submissions, not a quiz bank.
