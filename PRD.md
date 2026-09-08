@@ -1,4 +1,4 @@
-Prodio
+# Prodio
 
 Product Requirements Document
 
@@ -10,7 +10,7 @@ Prepared by Rahul Raghunathan
 
 A personal, self-directed product exploration, built end to end · live demo at prodio-ten.vercel.app
 
-Contents
+## Contents
 
 1. The Problem
 
@@ -44,11 +44,9 @@ Appendix A: Ship-Ready Pressure-Test
 
 Appendix B: How This PRD Came Together
 
-Product Requirements Document (solution sec: 13)
+---
 
-Learning Tech & AI for Non-Technical Professionals
-
-1. The Problem
+## 1. The Problem
 
 Technology and AI are now part of everyday work, and for the first time you do not need to be a developer to use them. A marketer, an HR lead, a finance analyst, or an operations manager can now ask AI to do things that used to require an engineer. But for someone without a technical background, this shift feels intimidating rather than exciting. Courses, YouTube channels and bootcamps are everywhere, yet people still do not know where to start, what to learn next, or how to turn what they learn into something they can actually use at work. Most existing learning is built around consuming content. I set out to design something different, a learning experience for non-technical professionals that is continuous, interactive and habit-forming, closer to Duolingo than to a course catalogue, and to actually build and launch it to 40 to 50 real users rather than stop at a proposal.
 
@@ -60,20 +58,15 @@ Explicitly out of scope: full software engineering or coding bootcamp depth; dee
 
 Inference: The problem is established by the research in Sections 4 through 6, so this document spends no further time proving it exists. But “non-technical professionals” is not one person, and before we can design anything we need to know exactly who touches this problem. That is Section 2.
 
-2. Stakeholder Mapping
+## 2. Stakeholder Mapping
 
 
 
 | Stakeholder | Cares most about | What we saw them do today | Role & power |
-
 | --- | --- | --- | --- |
-
 | The learner (primary user) | Getting better at their actual job without wasting time or looking incompetent | Shallow, Q&A-style AI use; occasional YouTube or a course started, rarely finished | User and, for the MVP, the buyer/adopter. High power, decides whether to start or quit |
-
 | Manager / employer | Their team keeping up, not necessarily how the learning happens | Sets expectation but rarely teaches or checks the work | Influencer. High power on motivation, low involvement in the actual learning |
-
 | Colleagues / peers | Their own workload; sometimes an unpaid reviewer of a colleague's AI-assisted work | Source of both encouragement and pressure | Influencer. Medium power, shapes norms and trust, a likely referral channel later |
-
 | IT / data security (context-dependent) | Company data safety and compliance | Largely absent from the individual's daily experience today | Low power for the MVP, a constraint to watch if the product moves toward workplace use |
 
 
@@ -82,31 +75,24 @@ User and buyer, named separately: for this MVP, the learner is both the user and
 
 Inference: The person who matters most is the learner themselves, acting alone, under pressure from a job, with no one else in the room actually teaching them. That tells us the product has to work standalone. To design for that person properly, we need their journey today, step by step. That is Section 3.
 
-3. The Learning Journey How It Works Today
+## 3. The Learning Journey How It Works Today
 
 
 
 | Stage | What happens | What we saw |
-
 | --- | --- | --- |
-
 | 1. Trigger | A job need, an employer expectation, a peer's post, or a specific task they cannot do | Almost never curiosity. “Current job needs it” was the unanimous answer |
-
 | 2. First search | Google, YouTube, ChatGPT, or a colleague, in that order | No one starts by picking a structured path first |
-
 | 3. Attempted structured learning | A course or bootcamp is sometimes tried | Built for a student's schedule against a real budget closer to 24 minutes a week; often too theoretical or generic |
-
 | 4. The stall point | Around the point where the learner has a real question about their own work | The single most repeated moment: “concept is fine, but building this is confusion.” Nothing answers “am I doing this right?” |
-
 | 5. Quiet abandonment | Not dramatic, described as neutral, not failure | Several respondents report zero unfinished courses, not because they finished, but because they never began anything structured |
-
 | 6. Fallback to shallow, ungoverned use | Daily AI use continues, but only basic Q&A | Confidence stays untested until a real, unsupported moment exposes the gap |
 
 
 
 Inference: The journey does not fail because people will not try, it fails at one specific, repeatable point: nothing tells them if they are on the right track, right when it would matter most. Sections 4 and 5 check what secondary research and existing tools already tell us about that exact stall point.
 
-4. Secondary Research
+## 4. Secondary Research
 
 The generative AI market is $22.2B in 2025, projected to $324.7B by 2033 (Grand View Research). So what: timing is not a risk here. IDC estimates the global skills gap could cost the economy up to $5.5 trillion. So what: the cost of not solving this is measured at a macro level, not assumed by us.
 
@@ -118,22 +104,16 @@ Completion rates track built-in accountability, not content quality: free self-p
 
 Inference: Secondary research confirms the market is large, the emotional climate is pressure rather than curiosity, and the specific failure mechanism, no feedback and a time mismatch, is already documented at a macro level, with SWAYAM as direct, uncomfortable proof that content and structure alone do not solve it. What secondary research alone cannot tell us is whether some existing product has already closed this seam. That is Section 5.
 
-5. Existing Tools and the Seam They Miss
+## 5. Existing Tools and the Seam They Miss
 
 
 
 | Category | Job it does well | Where it stops |
-
 | --- | --- | --- |
-
 | Course marketplaces (Coursera, Udemy, LinkedIn Learning) | Broad content library, low cost | Passive, low completion, generic, no feedback on real work |
-
 | Cohort-based programmes (Maven, Section) | Best completion rates of any format (70–80%), real accountability | Expensive, time-bound, not continuous. My interviews suggest the trusted human instructor, not the format, is what works, hard to productise cheaply |
-
 | Corporate L&D platforms (Sana Labs, 360Learning) | Enterprise scale, employer-funded | B2B-sold, still generic content; 73% of Fortune 500 companies still report skill gaps despite spend |
-
 | Consumer habit-learning: Duolingo, Mimo, SoloLearn, Iro AI | Proves daily, bite-sized, habit-based learning works at consumer scale. Iro AI specifically brands itself “the Duolingo for AI,” gamified 5-minute lessons, streaks, XP, live duels | Built for a beginner starting from zero. Teaches generic AI literacy through quizzes, not judgment on real work, and Iro's live duels are public, actively wrong for a shame-sensitive, mid-career user |
-
 | ChatGPT and similar tools, used informally | Instant, free, on-demand answers, a real feedback loop of a kind | Does not look at a person's whole body of work over time, does not tell them what they got wrong on their own output, has no answer key against which to check |
 
 
@@ -142,22 +122,16 @@ The unfinished job: nobody in this category checks a working professional's real
 
 Inference: Secondary sources and existing tools both point at the same seam. My own primary research had to test whether this holds up outside of reports. That is Section 6.
 
-6. Primary Research, Right-Sized for the Problem
+## 6. Primary Research, Right-Sized for the Problem
 
 
 
 | Segment (n=) | Method | What we heard |
-
 | --- | --- | --- |
-
 | Non-technical operators: Ops, Finance, HR (n=4) | In-depth interview | None want to “learn AI” for its own sake. “If you show me something I spend 1–2 hours on can become 10 minutes, I'll learn whatever is needed.” |
-
 | Semi-technical bridge roles: PM, Data Analyst (n=2) | In-depth interview | Learn just-in-time, abandon courses structured like a syllabus, want depth calibrated to role |
-
 | Additional in-depth interviews (n=5) | In-depth interview | “No clear roadmap,” decision paralysis, and an explicit rejection of gamification as a reason to stick with a product, citing trust and relevance instead |
-
 | Structured survey (n=15, plus a further n=25/n=14 in later rounds) | Guided questions + Google Form | Unanimous “current job needs it” as trigger; shallow, Q&A-only AI use even among daily users; verbatim “no clear roadmap on what to do next” |
-
 | Field account: one European tech company (n=1 organisation) | Anonymised secondary-sourced account | A non-technical employee's AI-generated work was found half unusable only after a colleague spent over an hour reviewing it, direct evidence that confidence in AI-assisted work goes untested until a real moment exposes it |
 
 
@@ -166,7 +140,7 @@ SAW: the trigger is job relevance, not curiosity. Confidence in AI-assisted work
 
 Inference: Primary research confirms the seam is real for actual people. It sharpens who feels it most, and what specifically breaks, is enough evidence to turn scattered findings into named opportunities and choose one. That is Section 7.
 
-7. Opportunity & Prioritisation
+## 7. Opportunity & Prioritisation
 
 A correction from the earlier draft, shown rather than hidden. An earlier pass at this section scored six problem hypotheses on Importance and Significance and found H1 (Navigation: professionals experience paralysis about what to learn) and H4 (Shallow plateau: professionals hit a hidden competence ceiling) tied at the top, “foundational.” That pass merged them into a mapping-first opportunity, a sequenced, role-specific path with a lightweight check folded into each step, and locked it as my working problem statement.
 
@@ -177,21 +151,13 @@ Re-scoring the opportunities directly, using Importance and Satisfaction rated o
 
 
 | Opportunity (consolidated pain point) | Importance | Satisfaction today | Opportunity Score |
-
 | --- | --- | --- | --- |
-
 | No mechanism checks whether real AI-assisted work is correct | 0.90 | 0.12 | 0.79 |
-
 | The gap is discovered externally, publicly, and too late | 0.85 | 0.10 | 0.77 |
-
 | No role-specific standard of “good” exists | 0.85 | 0.32 (sourced: 32% report a clear standard) | 0.58 |
-
 | Mistakes go unnoticed and quietly become habits | 0.60 | 0.20 | 0.48 |
-
 | Asking for help carries a real status/shame cost | 0.65 | 0.35 | 0.42 |
-
 | Even if they asked, colleagues can't validate the work either | 0.50 | 0.30 | 0.35 |
-
 | No navigation or pathway (the earlier draft's top pick) | 0.80 (sourced: 44% blocked by “no clear path” vs 16% “no time”) | 0.15 | 0.68 |
 
 
@@ -202,7 +168,7 @@ The opportunity carried forward: FOR the employed, mid-career non-technical prof
 
 Inference: One opportunity now clearly outranks the rest once solution risk is weighed alongside raw score, arrived at by directly re-examining an earlier conclusion against the strongest evidence in the research rather than defending it. That is specific enough to lock the problem statement. That is Section 8.
 
-8. Product Strategy User, Buyer, Problem Statement
+## 8. Product Strategy User, Buyer, Problem Statement
 
 Primary user and buyer, named separately: User: the employed, mid-career non-technical professional described below. Buyer, v1: the same person, this is a self-serve, bottom-up product. Buyer, v2: the employer or L&D function, once the product has usage data proving the judgment-check mechanism works, a realistic future direction, not the MVP.
 
@@ -218,20 +184,16 @@ Addendum: the level ladder. Each piloted role gets a 3-level ladder (L1/L2/L3), 
 
 Inference: The problem, persona and scope are locked. Section 9 puts real solution directions against this opportunity, including the one I nearly built, and shows why it lost.
 
-9. Solution Ideation & Direction
+## 9. Solution Ideation & Direction
 
 Three genuinely different directions were put against the locked opportunity, not three versions of the same idea.
 
 
 
 | Direction | Good at | Costs / risks | Verdict |
-
 | --- | --- | --- | --- |
-
 | A. Gamified daily content (Duolingo-style curated videos/articles, streaks, XP) | Fast to build, matches the original Duolingo-style inspiration this concept started from, cheap content sourcing | Directly contradicted by the evidence: SWAYAM already proved free, credible, structured content fails at 96%; my survey rated “streaks and points” the lowest-preferred option at 8%; a near-identical live competitor (Iro AI) already occupies this space and targets a beginner the persona is not | Rejected |
-
 | B. Personalised navigation / learning roadmap | Addresses a real, well-evidenced pain (44% blocked by “no clear path”); the direction I nearly locked in Section 7's earlier draft | Confidence is low as a standalone fix: it is the SWAYAM model again, structure without a check on real output; a good personalised roadmap is also a substantial content-curation build, not a 7-day one | Demoted to roadmap |
-
 | C. Real-work judgment-check engine | Directly answers the locked opportunity; smallest markable unit (secondary research's own recommendation); highest combined Impact × Confidence × Ease of the three | Needs a credible, scoped grading mechanism; cannot cover every role in the pilot window, so must start narrow | Chosen |
 
 
@@ -245,57 +207,36 @@ End-to-end user flow, today vs. tomorrow
 
 
 | Today (fragmented) | Tomorrow (this product) |
-
 | --- | --- |
-
 | Dev uses ChatGPT for a work task, gets an answer, moves on with no way to check it | Dev pastes the same real task/output into the product |
-
 | Confidence is assumed, not tested | A role-scoped rubric checks the output in under 3 minutes and returns right/wrong and why |
-
 | Nothing notices if Dev is repeating the same mistake | A 1-line prompt asks Dev to explain their reasoning, surfacing the specific skill gap, not just a pass/fail |
-
 | The first real check is a review or interview, unannounced and public | Dev has already been checked privately, repeatedly, before that moment arrives |
-
 | Nobody notices if Dev quietly stops trying | A return nudge (v1.1) notices silence and re-engages, once real usage data shows the actual drop-off pattern |
 
 
 
 Inference: The flow is simple enough to build in the available time and traces every step back to a pain point locked in Section 8. Section 10 details the exact features, their priority, and what is deliberately left out of v1.
 
-10. Product Detailing & MVP Scope
+## 10. Product Detailing & MVP Scope
 
 
 
 | Feature (capability) | Value type | Effort | Version |
-
 | --- | --- | --- | --- |
-
 | 3-minute judgment drills (spot the flaw in planted/real AI output, scored against a rubric) | Must-have | S | V1 |
-
 | Real-work check, 1 pilot role (PM/aspiring PM) x 3 levels = 3 rubrics (paste real or portfolio work, get checked against a role+level rubric, grade then independently verify) | Must-have | M | V1 |
-
 | Level-placement questionnaire (3-5 questions at onboarding, sets starting level) | Must-have | S | V1 |
-
 | Required-once Learn primer at onboarding (one short, role-specific video/article; never required again; no Ladder credit) | Must-have | S | V1 |
-
 | Adaptive reasoning follow-up (second Gemini call checks if the user's stated reasoning is genuine; one targeted follow-up if shallow) | Must-have | S | V1 |
-
 | Level ladder view (L1/L2/L3, fills in only from passed checks with demonstrated reasoning, not content) | Must-have | M | V1 |
-
 | General/solo-practitioner rubric, Level 1 only (serves the exploratory solo segment via the same mechanism) | Performance benefit | S | V1 |
-
 | Private-by-default design, no public scores or leaderboard | Must-have | S | V1 |
-
 | “Explain your reasoning” 1-line prompt after each check | Performance benefit | S | V1 |
-
 | Event tracking on every drill/check (role, pain point addressed, pass/fail) | Must-have | S | V1 |
-
 | Return / re-engagement nudge on silent drop-off | Performance benefit | S | V1.1 |
-
 | Ask-an-expert / peer validation fallback | Delighter | L | V1.2 |
-
 | Personalised navigation / learning roadmap | Delighter | L | V1.2 (parked pending v1 usage data) |
-
 | Email capture at signup (counts distinct users; no password, no verification, access still controlled by the device cookie, not the email) | Performance benefit | S | V1.1 |
 
 
@@ -330,130 +271,103 @@ The MVP cut. Not building in this version: a general-purpose “review anything�
 
 Inference: Every feature in this section traces to a step in the Section 9 flow and a pain point locked in Section 8. Sections 11 through 13, UX, analytics, and build/deployment, carry this scope into the live product.
 
-11. UX & Product Design
+## 11. UX & Product Design
 
 Static mockups for all 16 screens named in the flow doc were built in Claude Design, screenshots below. Full canvas: https://claude.ai/code/artifact/1ad2d755-7f54-4ca7-bd2d-71bd0b05c28b
 
 Design iceberg, worked top-down. Conceptual: the mental model is check-first, not lesson-first, every screen name and label reads like a diagnostic tool, never a course. Information: one primary action per screen, Home's is always "check something today," History/Ladder/Learn stay secondary. Interaction: the two moments that carry the most weight are Checking → Result (the tension resolving) and the adaptive Reasoning follow-up (pushes past a shallow answer once, never traps the user in a loop). Visual, addressed last: system font stack (not Inter), one accent blue, earned-progress states instead of game chrome, no fake iOS status bar or keyboard on any mobile screen.
 
-First-time flow
+**First-time flow**
 
+<table>
+<tr>
+<td align="center"><sub><b>1. Landing</b></sub></td>
+<td align="center"><sub><b>2. Level check</b></sub></td>
+<td align="center"><sub><b>3. Learn (required once)</b></sub></td>
+<td align="center"><sub><b>4. Test (drill)</b></sub></td>
+</tr>
+<tr>
+<td><img src="images/01-landing.png" width="200"></td>
+<td><img src="images/02-level-check.png" width="200"></td>
+<td><img src="images/03-learn.png" width="200"></td>
+<td><img src="images/04-test-drill.png" width="200"></td>
+</tr>
+<tr>
+<td align="center"><sub><b>5. Build (real check)</b></sub></td>
+<td align="center"><sub><b>6. Checking</b></sub></td>
+<td align="center"><sub><b>7. Result + fix tip</b></sub></td>
+<td align="center"><sub><b>8. Reasoning (adaptive)</b></sub></td>
+</tr>
+<tr>
+<td><img src="images/05-build-real-check.png" width="200"></td>
+<td><img src="images/06-checking.png" width="200"></td>
+<td><img src="images/07-result.png" width="200"></td>
+<td><img src="images/08-reasoning.png" width="200"></td>
+</tr>
+</table>
 
+**Returning flow, Home is the hub**
 
-|  |  |  |  |
+<table>
+<tr>
+<td align="center"><sub><b>Home</b></sub></td>
+<td align="center"><sub><b>History</b></sub></td>
+<td align="center"><sub><b>Ladder</b></sub></td>
+<td align="center"><sub><b>Profile</b></sub></td>
+</tr>
+<tr>
+<td><img src="images/09-home.png" width="200"></td>
+<td><img src="images/10-history.png" width="200"></td>
+<td><img src="images/11-ladder.png" width="200"></td>
+<td><img src="images/12-profile.png" width="200"></td>
+</tr>
+</table>
 
-| --- | --- | --- | --- |
+**Edge cases (mocked, not just described) and the Build desktop variant**
 
-| 1. Landing | 2. Level check | 3. Learn (required once) | 4. Test (drill) |
+<table>
+<tr>
+<td align="center"><sub><b>Low-confidence result</b></sub></td>
+<td align="center"><sub><b>Dispute / flag, logged not overridden</b></sub></td>
+<td align="center"><sub><b>Unsupported role</b></sub></td>
+</tr>
+<tr>
+<td><img src="images/13-low-confidence.png" width="200"></td>
+<td><img src="images/14-dispute-flag.png" width="200"></td>
+<td><img src="images/15-unsupported-role.png" width="200"></td>
+</tr>
+</table>
 
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img1.png]]
+<img src="images/16-build-desktop.png" width="600">
 
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img2.png]]
-
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img3.png]]
-
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img4.png]]
-
-
-
-
-
-|  |  |  |  |
-
-| --- | --- | --- | --- |
-
-| 5. Build (real check) | 6. Checking | 7. Result + fix tip | 8. Reasoning (adaptive) |
-
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img5.png]]
-
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img6.png]]
-
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img7.png]]
-
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img8.png]]
-
-
-
-Returning flow, Home is the hub
-
-
-
-|  |  |  |  |
-
-| --- | --- | --- | --- |
-
-| Home | History | Ladder | Profile |
-
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img9.png]]
-
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img10.png]]
-
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img11.png]]
-
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img12.png]]
-
-
-
-Edge cases (mocked, not just described) and the Build desktop variant
-
-
-
-|  |  |  |
-
-| --- | --- | --- |
-
-| Low-confidence result | Dispute / flag, logged not overridden | Unsupported role |
-
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img13.png]]
-
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img14.png]]
-
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img15.png]]
-
-
-
-![[attachments/PRD_-_Learning_Tech_&_AI_Rahul/PRD_-_Learning_Tech_&_AI_Rahul-img16.png]]
-
-Build, desktop-width variant, the real task (pasting written PRD work) is as much a desktop activity as a phone one
+*Build, desktop-width variant, the real task (pasting written PRD work) is as much a desktop activity as a phone one*
 
 Six components of UX, self-check. Honestly unmeasured until the pilot runs, no fabricated numbers here.
 
 
 
 | Component | How to judge it | Status |
-
 | --- | --- | --- |
-
 | Usability | % who complete the core task with no help | Not yet measured, first read comes from the 40-50 pilot users |
-
 | Efficiency | % who finish within the target time (under 3 min for a check) | Not yet measured |
-
 | Perceived effort | How cluttered / heavy it feels | Design intent: one primary action per screen, no forced multi-step content before a check |
-
 | Credibility | Social proof, trust cues, no broken states | Confidence badge and explicit uncertainty state are the trust mechanism; no social proof by design, this product doesn't claim popularity, it claims rigor |
-
 | Delight | One moment of unexpected value | Candidate: the Ladder cell filling in immediately after a demonstrated-reasoning pass |
-
 | Simplicity | Clicks to reach the outcome | Home to Result: 3 taps (Build, paste, Check it) for a returning user |
 
 
 
 Inference: The mockups and interaction model are locked at wireframe-to-hi-fi fidelity. Section 12 defines exactly what gets measured once this is live, so the self-check table above stops being intent and starts being evidence.
 
-12. Analytics & Event Tracking
+## 12. Analytics & Event Tracking
 
 
 
 | Layer | What it answers | This product |
-
 | --- | --- | --- |
-
 | North Star | Are we delivering the core value? | Checks completed per active user per week, with reasoning demonstrated, not just a passing verdict |
-
 | Leading | Will the outcome improve soon? | % of onboarding completions reaching a first Build check; % of failed checks that trigger "try again" |
-
 | Lagging | Did the outcome actually improve? | D7 return rate to Build, unprompted; Ladder cells filled per active user per week |
-
 | Activation | Did the user hit the aha moment? | First check with demonstrated reasoning (not just a first check, per Section 12's own north star discipline: a pass alone isn't the milestone) |
 
 
@@ -463,32 +377,22 @@ Event tracking sheet
 
 
 | Event name | Properties | Fires when |
-
 | --- | --- | --- |
-
 | level_check_completed | {starting_level, gap_pattern} | User finishes the 3-5 question placement |
-
 | learn_viewed | {resource_id, gap_pattern, required:true} | Onboarding primer opened |
-
 | drill_completed | {correct:bool, role, level} | Test drill answered |
-
 | check_submitted | {role, level, source:real\|example, is_retry:bool} | Build check submitted |
-
 | check_result | {verdict, confidence, call1_verdict, call2_agree:bool} | Grading pipeline returns a result |
-
 | reasoning_submitted | {accepted_on_first_pass:bool, followup_triggered:bool} | User answers the reasoning prompt, and any follow-up |
-
 | ladder_cell_filled | {role, level} | A check passes AND reasoning is demonstrated |
-
 | result_disputed | {check_id} | User flags a result as wrong |
-
 | signup_completed | {email} | User submits their email on Landing |
 
 
 
 So what: few event names, rich properties, a deliberate instrumentation discipline. Every property maps to a decision already made in Sections 9-11, not a vanity count.
 
-13. Build & Deployment
+## 13. Build & Deployment
 
 Solution: https://prodio-ten.vercel.app/
 
@@ -500,22 +404,17 @@ Real risks found during the build, named rather than hidden: a prompt conflict w
 
 Inference: Sections 1 through 13 now form a complete, evidence-traced document from problem to mockups to a named build plan. What remains is execution, not further design.
 
-14. Launch, Growth Loop & Iteration
+## 14. Launch, Growth Loop & Iteration
 
 Launch, honestly stated: this is a pilot launch, not a public one. The application is built, deployed, and verified end-to-end (Section 13), but has not yet run against real users outside the build-and-test loop. “Launch” here means opening the existing Vercel deployment to the 40-50 person pilot group already sized in Section 13, not a marketing push or a public release.
 
 
 
 | Phase | Gate to enter | What it proves |
-
 | --- | --- | --- |
-
 | Internal soak (done) | N/A | The pipeline holds under real Groq calls and a real Supabase database, not mocked (Section 13) |
-
 | Small pilot | Production latency issue (Section 13) root-caused and resolved, GROQ_API_KEY correctly set in Vercel | The product survives real, unscheduled use, not just scripted verification |
-
 | Full 40-50 user pilot | Small pilot shows no repeat failures on the check pipeline | The instrumentation in Section 12 produces a first real read on Activation, Leading, and Lagging metrics, currently honestly unmeasured |
-
 | Any wider release | The pilot's own north star (checks completed per active user per week, with reasoning demonstrated) shows a real, repeatable pattern, not a one-time novelty spike | Decision to widen scope, not before |
 
 
@@ -531,15 +430,10 @@ Iteration plan: the pilot's job is to generate the first real numbers behind Sec
 
 
 | Signal (from Section 12's existing events) | If it's bad | What that triggers |
-
 | --- | --- | --- |
-
 | % onboarding completions reaching a first Build check (Leading) | Low | Investigate the Learn step specifically, a learn_skipped event exists in the shipped code (added after this PRD's last revision, not yet added to Section 12's event table) but isn't measured yet; a high skip rate paired with low activation would suggest the primer isn't the blocker people assume it is |
-
 | First check with demonstrated reasoning (Activation) | Low relative to first check submitted | The reasoning follow-up (Section 6/7) may be too easy to abandon; revisit whether skipping it should be as frictionless as skipping the Learn video |
-
 | D7 return rate to Build, unprompted (Lagging) | Low | The core premise (people return because it's useful, not because of any hook) hasn't held; this is the one number that would most directly challenge the product's own thesis, worth treating as a kill-or-continue signal, not a tuning knob |
-
 | Pass rate per level/rubric | Skewed heavily to pass or fail | Rubric calibration issue, not a user behavior issue; fix the rubric text (lib/rubrics.ts), not the product |
 
 
@@ -548,7 +442,7 @@ Explicit non-goals for this section, consistent with Section 10: no cohort or te
 
 Inference: launch is a data-collection instrument before it's anything else. The pilot's only real job is to convert Section 12's “honestly unmeasured” metrics into real numbers, and every idea in this section, the referral mechanic included, stays a hypothesis, not a commitment, until those numbers say otherwise.
 
-Appendix A: Ship-Ready Pressure-Test
+## Appendix A: Ship-Ready Pressure-Test
 
 Every pressure-test question below, answered against what this document and the shipped product actually contain, not restated as intent.
 
@@ -654,7 +548,7 @@ Q: Does the core flow survive a stranger using it unaided, and do you know what 
 
 Section 14 sits outside the original 13-section template, added once the build surfaced a real question the template does not ask: what happens after Sections 1 through 13 are done and the product is live. Its own Inference line is its pressure test: every idea in it, including the referral mechanic, stays a hypothesis until the pilot's real numbers say otherwise, not a committed feature dressed up as one.
 
-Appendix B: How This PRD Came Together
+## Appendix B: How This PRD Came Together
 
 Honestly stated, there was no single prompt. This PRD, and the working product behind it, came out of an extended, iterative collaboration between me and Claude Code across a multi-day build, not a one-shot generation from a tidy instruction. The shape of that process, for anyone reusing this approach with an AI collaborator:
 
