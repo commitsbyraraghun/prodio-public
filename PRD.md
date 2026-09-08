@@ -8,7 +8,7 @@ Prodio: an AI-judgment check platform, built and shipped as a working product, n
 
 Prepared by Rahul Raghunathan
 
-A personal, self-directed product exploration, built end to end · live demo at prodio-ten.vercel.app
+A personal, self-directed product exploration, built end to end · live demo at prodio-ten.vercel.app 
 
 ## Contents
 
